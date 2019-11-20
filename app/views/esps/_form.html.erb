@@ -1,0 +1,27 @@
+<%= form_with(model: esp, local: true) do |form| %>
+  <% if esp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(esp.errors.count, "error") %> prohibited this esp from being saved:</h2>
+
+      <ul>
+      <% esp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :mac %>
+    <%= form.text_field :mac, id: :esp_mac %>
+  </div>
+
+  <div class="field">
+    <%= form.label :version %>
+    <%= form.number_field :version, id: :esp_version %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

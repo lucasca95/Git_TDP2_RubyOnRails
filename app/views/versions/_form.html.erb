@@ -1,0 +1,32 @@
+<%= form_with(model: version, local: true) do |form| %>
+  <% if version.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(version.errors.count, "error") %> prohibited this version from being saved:</h2>
+
+      <ul>
+      <% version.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.number_field :number, id: :version_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :changelog %>
+    <%= form.text_field :changelog, id: :version_changelog %>
+  </div>
+
+  <div class="field">
+    <%= form.label :program_id %>
+    <%= form.text_field :program_id, id: :version_program_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

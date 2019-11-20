@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Esps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mac</th>
+      <th>Version</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @esps.each do |esp| %>
+      <tr>
+        <td><%= esp.mac %></td>
+        <td><%= esp.version %></td>
+        <td><%= link_to 'Show', esp %></td>
+        <td><%= link_to 'Edit', edit_esp_path(esp) %></td>
+        <td><%= link_to 'Destroy', esp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Esp', new_esp_path %>

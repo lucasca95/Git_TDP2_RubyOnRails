@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: tdp2
+  password: Culosucio
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: RoR_TDP2_development
+
+test:
+  <<: *default
+  database: RoR_TDP2_test
+
+production:
+  <<: *default
+  database: RoR_TDP2_production

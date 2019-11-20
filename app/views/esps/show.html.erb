@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @esp.mac %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @esp.version %>
+</p>
+
+<%= link_to 'Edit', edit_esp_path(@esp) %> |
+<%= link_to 'Back', esps_path %>
