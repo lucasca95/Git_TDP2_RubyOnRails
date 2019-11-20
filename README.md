@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Git_TDP2_RubyOnRails
+Git_TDP2_RubyOnRails
+>>>>>>> e1238541d9ff86a203c0b2eae5bcc1223e060d7d

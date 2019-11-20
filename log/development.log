@@ -730,3 +730,25 @@ Processing by EspsController#sendData as HTML
 Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEsp Load (0.2ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 LIMIT 11[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (2, 'Esta es la version 2', 1, '2019-11-20 20:29:35', '2019-11-20 20:29:35')[0m
+  [1m[35m (98.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEsp Load (0.9ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
