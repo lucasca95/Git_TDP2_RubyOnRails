@@ -229,3 +229,230 @@ Migrating to CreateJoinTableTargetProgram (20191120195146)
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `issues` (`message`, `created_at`, `updated_at`) VALUES ('No hay más yerba', '2019-11-20 20:08:34', '2019-11-20 20:08:34')[0m
   [1m[35m (36.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/devices" for 192.168.0.119 at 2019-11-20 17:11:10 -0300
+Cannot render console from 192.168.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 2 LIMIT 1[0m
+  [1m[36mEsp Load (1.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 2 LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 3 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 3 LIMIT 1[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 4 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 4 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (71.2ms)
+Started GET "/devices" for 192.168.0.119 at 2019-11-20 17:11:13 -0300
+Cannot render console from 192.168.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[35m (20.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (1.1ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.8ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  [1m[36mTarget Load (1.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 2 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 2 LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 3 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 3 LIMIT 1[0m
+  [1m[36mTarget Load (0.6ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 4 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 4 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 3004ms (Views: 2975.3ms | ActiveRecord: 26.1ms)
+
+
+Completed 200 OK in 5981ms (Views: 5953.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/devices/1" for 192.168.0.119 at 2019-11-20 17:11:28 -0300
+Cannot render console from 192.168.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+  Rendering devices/show.html.erb within layouts/application
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 57ms (Views: 50.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/devices" for 192.168.0.119 at 2019-11-20 17:11:31 -0300
+Cannot render console from 192.168.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  [1m[36mTarget Load (1.8ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 2 LIMIT 1[0m
+  [1m[36mEsp Load (2.1ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 2 LIMIT 1[0m
+  [1m[36mTarget Load (2.6ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 3 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 3 LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 4 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 4 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 68ms (Views: 57.5ms | ActiveRecord: 8.9ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1501.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `RoR_TDP2_development`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (436.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `RoR_TDP2_test`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `RoR_TDP2_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `RoR_TDP2_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices` CASCADE[0m
+  [1m[35m (272.1ms)[0m  [1m[35mCREATE TABLE `devices` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `latitude` float(24), `longitude` float(24), `target_id` bigint, `esp_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_on_esp_id`  (`esp_id`),  INDEX `index_devices_on_target_id`  (`target_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices_versions` CASCADE[0m
+  [1m[35m (297.1ms)[0m  [1m[35mCREATE TABLE `devices_versions` (`device_id` bigint NOT NULL, `version_id` bigint NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_versions_on_device_id_and_version_id`  (`device_id`, `version_id`),  INDEX `index_devices_versions_on_version_id_and_device_id`  (`version_id`, `device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `esps` CASCADE[0m
+  [1m[35m (268.2ms)[0m  [1m[35mCREATE TABLE `esps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `mac` varchar(255), `version` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `issues` CASCADE[0m
+  [1m[35m (244.6ms)[0m  [1m[35mCREATE TABLE `issues` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `message` varchar(255), `device_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_issues_on_device_id`  (`device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs` CASCADE[0m
+  [1m[35m (211.7ms)[0m  [1m[35mCREATE TABLE `programs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs_targets` CASCADE[0m
+  [1m[35m (276.8ms)[0m  [1m[35mCREATE TABLE `programs_targets` (`target_id` bigint NOT NULL, `program_id` bigint NOT NULL,  INDEX `index_programs_targets_on_program_id_and_target_id`  (`program_id`, `target_id`),  INDEX `index_programs_targets_on_target_id_and_program_id`  (`target_id`, `program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `targets` CASCADE[0m
+  [1m[35m (265.9ms)[0m  [1m[35mCREATE TABLE `targets` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (267.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email`  (`email`), UNIQUE INDEX `index_users_on_reset_password_token`  (`reset_password_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `versions` CASCADE[0m
+  [1m[35m (266.5ms)[0m  [1m[35mCREATE TABLE `versions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `changelog` varchar(255), `program_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_versions_on_program_id`  (`program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (636.1ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_8eb6be2ced`
+FOREIGN KEY (`esp_id`)
+  REFERENCES `esps` (`id`)
+[0m
+  [1m[35m (714.8ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_880f659fce`
+FOREIGN KEY (`target_id`)
+  REFERENCES `targets` (`id`)
+[0m
+  [1m[35m (602.6ms)[0m  [1m[35mALTER TABLE `issues` ADD CONSTRAINT `fk_rails_e76fc2d2a8`
+FOREIGN KEY (`device_id`)
+  REFERENCES `devices` (`id`)
+[0m
+  [1m[35m (581.4ms)[0m  [1m[35mALTER TABLE `versions` ADD CONSTRAINT `fk_rails_c7d507fe90`
+FOREIGN KEY (`program_id`)
+  REFERENCES `programs` (`id`)
+[0m
+  [1m[35m (222.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (29.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20191120195146)[0m
+  [1m[35m (33.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20191120195145),
+(20191120195135),
+(20191120195141),
+(20191120195143),
+(20191120195133),
+(20191120195139),
+(20191120195128),
+(20191120195137);
+
+[0m
+  [1m[35m (278.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-11-20 20:12:01', '2019-11-20 20:12:01')[0m
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices` CASCADE[0m
+  [1m[35m (334.0ms)[0m  [1m[35mCREATE TABLE `devices` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `latitude` float(24), `longitude` float(24), `target_id` bigint, `esp_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_on_esp_id`  (`esp_id`),  INDEX `index_devices_on_target_id`  (`target_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices_versions` CASCADE[0m
+  [1m[35m (286.6ms)[0m  [1m[35mCREATE TABLE `devices_versions` (`device_id` bigint NOT NULL, `version_id` bigint NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_versions_on_device_id_and_version_id`  (`device_id`, `version_id`),  INDEX `index_devices_versions_on_version_id_and_device_id`  (`version_id`, `device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `esps` CASCADE[0m
+  [1m[35m (221.3ms)[0m  [1m[35mCREATE TABLE `esps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `mac` varchar(255), `version` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `issues` CASCADE[0m
+  [1m[35m (243.0ms)[0m  [1m[35mCREATE TABLE `issues` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `message` varchar(255), `device_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_issues_on_device_id`  (`device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs` CASCADE[0m
+  [1m[35m (255.6ms)[0m  [1m[35mCREATE TABLE `programs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs_targets` CASCADE[0m
+  [1m[35m (265.0ms)[0m  [1m[35mCREATE TABLE `programs_targets` (`target_id` bigint NOT NULL, `program_id` bigint NOT NULL,  INDEX `index_programs_targets_on_program_id_and_target_id`  (`program_id`, `target_id`),  INDEX `index_programs_targets_on_target_id_and_program_id`  (`target_id`, `program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `targets` CASCADE[0m
+  [1m[35m (178.2ms)[0m  [1m[35mCREATE TABLE `targets` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (285.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email`  (`email`), UNIQUE INDEX `index_users_on_reset_password_token`  (`reset_password_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `versions` CASCADE[0m
+  [1m[35m (254.9ms)[0m  [1m[35mCREATE TABLE `versions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `changelog` varchar(255), `program_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_versions_on_program_id`  (`program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (626.4ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_8eb6be2ced`
+FOREIGN KEY (`esp_id`)
+  REFERENCES `esps` (`id`)
+[0m
+  [1m[35m (624.1ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_880f659fce`
+FOREIGN KEY (`target_id`)
+  REFERENCES `targets` (`id`)
+[0m
+  [1m[35m (592.5ms)[0m  [1m[35mALTER TABLE `issues` ADD CONSTRAINT `fk_rails_e76fc2d2a8`
+FOREIGN KEY (`device_id`)
+  REFERENCES `devices` (`id`)
+[0m
+  [1m[35m (647.3ms)[0m  [1m[35mALTER TABLE `versions` ADD CONSTRAINT `fk_rails_c7d507fe90`
+FOREIGN KEY (`program_id`)
+  REFERENCES `programs` (`id`)
+[0m
+  [1m[35m (222.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (33.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20191120195146)[0m
+  [1m[35m (33.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20191120195145),
+(20191120195135),
+(20191120195141),
+(20191120195143),
+(20191120195133),
+(20191120195139),
+(20191120195128),
+(20191120195137);
+
+[0m
+  [1m[35m (233.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-11-20 20:12:06', '2019-11-20 20:12:06')[0m
+  [1m[35m (29.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `targets` (`name`, `created_at`, `updated_at`) VALUES ('Arduino UNO', '2019-11-20 20:12:06', '2019-11-20 20:12:06')[0m
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `esps` (`mac`, `version`, `created_at`, `updated_at`) VALUES ('AA:BB:CC:DD:EE:FF', 1, '2019-11-20 20:12:06', '2019-11-20 20:12:06')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `devices` (`name`, `latitude`, `longitude`, `target_id`, `esp_id`, `created_at`, `updated_at`) VALUES ('Arduino Catedra', 0.0, 0.0, 1, 1, '2019-11-20 20:12:06', '2019-11-20 20:12:06')[0m
+  [1m[35m (32.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `programs` (`name`, `description`, `created_at`, `updated_at`) VALUES ('Blinky 500', 'EL BLINKY QUE BLINKEA', '2019-11-20 20:12:06', '2019-11-20 20:12:06')[0m
+  [1m[35m (27.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `programs_targets` (`target_id`, `program_id`) VALUES (1, 1)[0m
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (1, 'Nada', 1, '2019-11-20 20:12:07', '2019-11-20 20:12:07')[0m
+  [1m[35m (29.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `devices_versions` (`device_id`, `version_id`, `created_at`, `updated_at`) VALUES (1, 1, '2019-11-20 20:12:07', '2019-11-20 20:12:07')[0m
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `issues` (`message`, `created_at`, `updated_at`) VALUES ('No hay más yerba', '2019-11-20 20:12:07', '2019-11-20 20:12:07')[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
