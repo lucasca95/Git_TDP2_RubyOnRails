@@ -6,5 +6,12 @@ Rails.application.routes.draw do
   resources :targets
   resources :esps
   devise_for :users
+  root to: "devices#index"
+
+
+  get "/esps/:mac/version", to: "esps#version" , as: "checkVersion"
+  get "/esps/:mac/:page/:size", to: "esps#send" , as: "send"
+  get "/esps/:mac/updated", to: "esps#updated" , as: "updated"
+  get "/esps/:mac/error/:message", to: "esps#error" , as: "error"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
