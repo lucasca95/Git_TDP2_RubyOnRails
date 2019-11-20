@@ -752,3 +752,258 @@ Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.0ms)
   [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
   [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
   [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEsp Load (0.2ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT `versions`.* FROM `versions`[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (1.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (1.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (1.2ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.9ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.2ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (1.1ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (1.2ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (2.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.2ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.2ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (1.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (2.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.2ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.9ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (1.0ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.9ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (2.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.6ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (2.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (1.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (2.1ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (1.6ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (1.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.6ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.8ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (1.6ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (1.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+Started GET "/esps/AA:BB:CC:DD:EE:FF/0/8" for 192.168.0.119 at 2019-11-20 18:11:59 -0300
+Cannot render console from 192.168.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FF", "page"=>"0", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb within layouts/application
+  Rendered esps/sendData.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 379ms (Views: 229.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/esps/AA:BB:CC:DD:EE:FF/1/8" for 192.168.0.119 at 2019-11-20 18:12:06 -0300
+Cannot render console from 192.168.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FF", "page"=>"1", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb within layouts/application
+  Rendered esps/sendData.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 42.2ms | ActiveRecord: 2.7ms)
+
+
