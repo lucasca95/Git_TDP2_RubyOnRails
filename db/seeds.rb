@@ -11,6 +11,7 @@ e = Esp.create(mac:"AA:BB:CC:DD:EE:FF", version:1)
 d = Device.create(name:"Arduino Catedra",latitude:0,longitude:0,esp_id:e.id,target_id:t.id)
 p = Program.create(name:"Blinky 500", description:"EL BLINKY QUE BLINKEA")
 p.targets << t
-d.programs << p
-Version.create(number:1,changelog:"Nada", program_id:p.id)
+v = Version.create(number:1,changelog:"Nada", program_id:p.id)
+p.versions << v
+d.versions << v
 i = Issue.create(message:"No hay más yerba")

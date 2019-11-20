@@ -10,7 +10,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191120195128) do
+ActiveRecord::Schema.define(version: 20191120195146) do
+
+  create_table "devices", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
+    t.float "latitude", limit: 24
+    t.float "longitude", limit: 24
+    t.bigint "target_id"
+    t.bigint "esp_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["esp_id"], name: "index_devices_on_esp_id"
+    t.index ["target_id"], name: "index_devices_on_target_id"
+  end
+
+  create_table "devices_versions", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "device_id", null: false
+    t.bigint "version_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["device_id", "version_id"], name: "index_devices_versions_on_device_id_and_version_id"
+    t.index ["version_id", "device_id"], name: "index_devices_versions_on_version_id_and_device_id"
+  end
+
+  create_table "esps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "mac"
+    t.integer "version"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "issues", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "message"
+    t.bigint "device_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["device_id"], name: "index_issues_on_device_id"
+  end
+
+  create_table "programs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "programs_targets", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "target_id", null: false
+    t.bigint "program_id", null: false
+    t.index ["program_id", "target_id"], name: "index_programs_targets_on_program_id_and_target_id"
+    t.index ["target_id", "program_id"], name: "index_programs_targets_on_target_id_and_program_id"
+  end
+
+  create_table "targets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email", default: "", null: false
@@ -24,4 +80,17 @@ ActiveRecord::Schema.define(version: 20191120195128) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "versions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "number"
+    t.string "changelog"
+    t.bigint "program_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["program_id"], name: "index_versions_on_program_id"
+  end
+
+  add_foreign_key "devices", "esps"
+  add_foreign_key "devices", "targets"
+  add_foreign_key "issues", "devices"
+  add_foreign_key "versions", "programs"
 end
