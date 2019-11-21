@@ -62,14 +62,14 @@ class EspsController < ApplicationController
   end
 
   def version 
-  
+    @version = Esp.where(mac:params[:mac]).lastVersion?
   end
 
   def sendData
     @data = Esp.where(mac:params[:mac]).first.getLastVersion(params[:page].to_i,params[:size].to_i)
   end
   def updated
-  
+    Esp.where(mac:params[:mac]).first.updated
   end
 
   def error

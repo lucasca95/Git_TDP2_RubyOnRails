@@ -24,4 +24,8 @@ class Esp < ApplicationRecord
         end
         return result    
     end
+
+    def updated
+        self.device.versions << self.actualVersion
+    end 
 end
