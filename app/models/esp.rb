@@ -18,7 +18,7 @@ class Esp < ApplicationRecord
 
     def getLastVersion(page,size)
         result = ""
-        f = File.new("compiled_programs/#{self.program.id}/#{self.actualVersion.id}/#{self.device.target.id}.hex")
+        f = File.new("compiled_programs/#{self.program.id}/#{self.actualVersion.number}/#{self.device.target.id}.hex")
         f.readlines[page*size..((page + 1)*size)-1].each do |l|
             result = "#{result}#{l.to_s.gsub!( "\n", "")}"
         end
