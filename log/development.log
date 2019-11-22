@@ -1007,3 +1007,1134 @@ Processing by EspsController#sendData as HTML
 Completed 200 OK in 58ms (Views: 42.2ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/" for 163.10.110.117 at 2019-11-21 19:21:52 -0300
+Cannot render console from 163.10.110.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (51.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (8.5ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (156.3ms)
+Completed 200 OK in 1555ms (Views: 1460.6ms | ActiveRecord: 32.6ms)
+
+
+Started GET "/" for 192.168.43.198 at 2019-11-21 19:30:44 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (63.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (30.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.8ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (204.4ms)
+Completed 200 OK in 1632ms (Views: 1504.7ms | ActiveRecord: 65.1ms)
+
+
+Started GET "/AA:BB:CC:DD:EE:FF" for 192.168.43.198 at 2019-11-21 19:30:57 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/AA:BB:CC:DD:EE:FF"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/AA:BB:CC:DD:EE:FF/version" for 192.168.43.198 at 2019-11-21 19:31:08 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/AA:BB:CC:DD:EE:FF/version"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/esps/AA:BB:CC:DD:EE:FF/version" for 192.168.43.198 at 2019-11-21 19:31:27 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FF"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Esp Load (0.0ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m  [["mac", "AA:BB:CC:DD:EE:FF"], ["LIMIT", 11]]
+NoMethodError (undefined method `lastVersion?' for #<Esp::ActiveRecord_Relation:0x00007fb28c0457b8>):
+  
+app/controllers/esps_controller.rb:65:in `version'
+Started GET "/esps/AA:BB:CC:DD:EE:FF/version" for 192.168.43.198 at 2019-11-21 19:32:27 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FF"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (45.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (64.1ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb within layouts/application
+  Rendered esps/version.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 347ms (Views: 41.4ms | ActiveRecord: 149.2ms)
+
+
+Started GET "/esps/AA:BB:CC:DD:EE:FE/version" for 192.168.43.198 at 2019-11-21 19:32:38 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FE"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FE' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `lastVersion?' for nil:NilClass):
+  
+app/controllers/esps_controller.rb:65:in `version'
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:45:00 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (95.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 20.8ms)
+
+
+  
+NoMethodError (undefined method `lastVersion?' for nil:NilClass):
+  
+app/controllers/esps_controller.rb:65:in `version'
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:45:18 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `lastVersion?' for nil:NilClass):
+  
+app/controllers/esps_controller.rb:65:in `version'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (13.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mEsp Load (0.8ms)[0m  [1m[34mSELECT `esps`.* FROM `esps`[0m
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (58.1ms)[0m  [1m[33mUPDATE `esps` SET `mac` = 'message and quit', `updated_at` = '2019-11-21 22:46:06' WHERE `esps`.`id` = 1[0m
+  [1m[35m (42.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` ORDER BY `esps`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `esps` SET `mac` = 'A0:20:A6:00:F3:CD', `updated_at` = '2019-11-21 22:46:33' WHERE `esps`.`id` = 1[0m
+  [1m[35m (61.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:46:41 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (52.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb within layouts/application
+  Rendered esps/version.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1025ms (Views: 706.9ms | ActiveRecord: 92.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/updated" for 192.168.43.198 at 2019-11-21 19:46:55 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#updated as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `devices_versions` (`device_id`, `version_id`, `created_at`, `updated_at`) VALUES (1, 2, '2019-11-21 22:46:55', '2019-11-21 22:46:55')[0m
+  [1m[35m (66.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering esps/updated.html.erb within layouts/application
+  Rendered esps/updated.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 132ms (Views: 36.1ms | ActiveRecord: 69.5ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:47:00 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.6ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb within layouts/application
+  Rendered esps/version.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 35.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:47:25 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb within layouts/application
+  Rendered esps/version.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 41.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:48:41 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 2.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:48:59 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.6ms)
+Completed 200 OK in 22ms (Views: 1.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:49:20 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 1.2ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT `versions`.* FROM `versions`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (3, 'Blinky100', 1, '2019-11-21 22:51:24', '2019-11-21 22:51:24')[0m
+  [1m[35m (54.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:51:36 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.2ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 1.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/0/8/" for 192.168.43.107 at 2019-11-21 19:51:36 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"0", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 1.2ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/1/8/" for 192.168.43.107 at 2019-11-21 19:51:37 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"1", "size"=>"8"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/2/8/" for 192.168.43.107 at 2019-11-21 19:51:37 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"2", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 18ms (Views: 1.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/3/8/" for 192.168.43.107 at 2019-11-21 19:51:37 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"3", "size"=>"8"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 18ms (Views: 1.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/4/8/" for 192.168.43.107 at 2019-11-21 19:51:38 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"4", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/5/8/" for 192.168.43.107 at 2019-11-21 19:51:38 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"5", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/6/8/" for 192.168.43.107 at 2019-11-21 19:51:38 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"6", "size"=>"8"}
+  [1m[36mEsp Load (1.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/7/8/" for 192.168.43.107 at 2019-11-21 19:51:38 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"7", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (1.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 22ms (Views: 1.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/updated" for 192.168.43.198 at 2019-11-21 19:51:56 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#updated as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (2.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `devices_versions` (`device_id`, `version_id`, `created_at`, `updated_at`) VALUES (1, 3, '2019-11-21 22:51:57', '2019-11-21 22:51:57')[0m
+  [1m[35m (102.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering esps/updated.html.erb
+  Rendered esps/updated.html.erb (0.4ms)
+Completed 200 OK in 129ms (Views: 1.4ms | ActiveRecord: 108.9ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:52:02 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (1.6ms)
+Completed 200 OK in 17ms (Views: 4.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:52:42 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (2.1ms)
+Completed 200 OK in 18ms (Views: 4.5ms | ActiveRecord: 2.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (4, 'Blinky200', 1, '2019-11-21 22:53:00', '2019-11-21 22:53:00')[0m
+  [1m[35m (397.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.198 at 2019-11-21 19:53:13 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.6ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:53:23 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/0/8/" for 192.168.43.107 at 2019-11-21 19:53:24 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"0", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 16ms (Views: 1.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/1/8/" for 192.168.43.107 at 2019-11-21 19:53:24 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"1", "size"=>"8"}
+  [1m[36mEsp Load (0.8ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 1.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/2/8/" for 192.168.43.107 at 2019-11-21 19:53:24 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"2", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.9ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/3/8/" for 192.168.43.107 at 2019-11-21 19:53:25 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"3", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 18ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/4/8/" for 192.168.43.107 at 2019-11-21 19:53:25 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"4", "size"=>"8"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/5/8/" for 192.168.43.107 at 2019-11-21 19:53:25 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"5", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.1ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.1ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.6ms)
+Completed 200 OK in 22ms (Views: 2.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/6/8/" for 192.168.43.107 at 2019-11-21 19:53:26 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"6", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 1.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/7/8/" for 192.168.43.107 at 2019-11-21 19:53:26 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"7", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.1ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (2.3ms)
+Completed 200 OK in 21ms (Views: 4.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/updated" for 192.168.43.198 at 2019-11-21 19:53:48 -0300
+Cannot render console from 192.168.43.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#updated as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `devices_versions` (`device_id`, `version_id`, `created_at`, `updated_at`) VALUES (1, 4, '2019-11-21 22:53:48', '2019-11-21 22:53:48')[0m
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering esps/updated.html.erb
+  Rendered esps/updated.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 1.6ms | ActiveRecord: 60.1ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.8ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (5, 'Blinky200', 1, '2019-11-21 22:54:07', '2019-11-21 22:54:07')[0m
+  [1m[35m (47.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:54:26 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.8ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.5ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/0/8/" for 192.168.43.107 at 2019-11-21 19:54:26 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"0", "size"=>"8"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/1/8/" for 192.168.43.107 at 2019-11-21 19:54:27 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"1", "size"=>"8"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/2/8/" for 192.168.43.107 at 2019-11-21 19:54:27 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"2", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 20ms (Views: 1.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/3/8/" for 192.168.43.107 at 2019-11-21 19:54:27 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"3", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 1.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/4/8/" for 192.168.43.107 at 2019-11-21 19:54:28 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"4", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 19ms (Views: 1.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/5/8/" for 192.168.43.107 at 2019-11-21 19:54:28 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"5", "size"=>"8"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (1.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/6/8/" for 192.168.43.107 at 2019-11-21 19:54:28 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"6", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 20ms (Views: 1.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/7/8/" for 192.168.43.107 at 2019-11-21 19:54:29 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"7", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (6, 'Blinky1000', 1, '2019-11-21 22:57:50', '2019-11-21 22:57:50')[0m
+  [1m[35m (77.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 19:58:01 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/0/8/" for 192.168.43.107 at 2019-11-21 19:58:01 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"0", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (1.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 1.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/1/8/" for 192.168.43.107 at 2019-11-21 19:58:02 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"1", "size"=>"8"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (1.2ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/2/8/" for 192.168.43.107 at 2019-11-21 19:58:02 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"2", "size"=>"8"}
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.8ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 19ms (Views: 1.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/3/8/" for 192.168.43.107 at 2019-11-21 19:58:02 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"3", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.1ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/4/8/" for 192.168.43.107 at 2019-11-21 19:58:02 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"4", "size"=>"8"}
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 2.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/5/8/" for 192.168.43.107 at 2019-11-21 19:58:03 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"5", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.7ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.8ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/6/8/" for 192.168.43.107 at 2019-11-21 19:58:03 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"6", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.1ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 19ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/7/8/" for 192.168.43.107 at 2019-11-21 19:58:03 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"7", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mVersion Load (0.6ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `versions` SET `number` = 3, `updated_at` = '2019-11-21 23:10:46' WHERE `versions`.`id` = 6[0m
+  [1m[35m (50.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/esps/A0:20:A6:00:F3:CD/version" for 192.168.43.107 at 2019-11-21 20:10:58 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  Rendering esps/version.html.erb
+  Rendered esps/version.html.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/0/8/" for 192.168.43.107 at 2019-11-21 20:10:59 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"0", "size"=>"8"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/1/8/" for 192.168.43.107 at 2019-11-21 20:10:59 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"1", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/2/8/" for 192.168.43.107 at 2019-11-21 20:11:00 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"2", "size"=>"8"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/3/8/" for 192.168.43.107 at 2019-11-21 20:11:00 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"3", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/4/8/" for 192.168.43.107 at 2019-11-21 20:11:00 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"4", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.5ms)
+Completed 200 OK in 18ms (Views: 1.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/5/8/" for 192.168.43.107 at 2019-11-21 20:11:01 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"5", "size"=>"8"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.5ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 1.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/6/8/" for 192.168.43.107 at 2019-11-21 20:11:01 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"6", "size"=>"8"}
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 1.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/esps/A0:20:A6:00:F3:CD/7/8/" for 192.168.43.107 at 2019-11-21 20:11:01 -0300
+Cannot render console from 192.168.43.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EspsController#sendData as HTML
+  Parameters: {"mac"=>"A0:20:A6:00:F3:CD", "page"=>"7", "size"=>"8"}
+  [1m[36mEsp Load (0.6ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'A0:20:A6:00:F3:CD' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.4ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Program Load (0.0ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  Rendering esps/sendData.html.erb
+  Rendered esps/sendData.html.erb (0.3ms)
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 2.4ms)
+
+

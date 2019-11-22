@@ -1,6 +1,6 @@
 class EspsController < ApplicationController
   before_action :set_esp, only: [:show, :edit, :update, :destroy]
-
+  layout false , only: [:version,:updated,:sendData]
   # GET /esps
   # GET /esps.json
   def index
@@ -62,7 +62,7 @@ class EspsController < ApplicationController
   end
 
   def version 
-    @version = Esp.where(mac:params[:mac]).lastVersion?
+    @version = Esp.where(mac:params[:mac]).first.lastVersion?
   end
 
   def sendData
