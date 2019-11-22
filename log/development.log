@@ -1007,3 +1007,398 @@ Processing by EspsController#sendData as HTML
 Completed 200 OK in 58ms (Views: 42.2ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-11-22 15:41:14 -0300
+  
+Mysql2::Error::ConnectionError (Access denied for user 'tdp2'@'localhost' (using password: YES)):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:761:in `new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:805:in `checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:784:in `try_to_checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:745:in `acquire_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:502:in `checkout'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:376:in `connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-11-22 15:51:01 -0300
+  
+ActiveRecord::NoDatabaseError (Unknown database 'RoR_TDP2_development'):
+  
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `rescue in mysql2_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:11:in `mysql2_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:761:in `new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:805:in `checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:784:in `try_to_checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:745:in `acquire_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:502:in `checkout'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:376:in `connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-11-22 15:51:03 -0300
+  
+ActiveRecord::NoDatabaseError (Unknown database 'RoR_TDP2_development'):
+  
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `rescue in mysql2_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:11:in `mysql2_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:761:in `new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:805:in `checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:784:in `try_to_checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:745:in `acquire_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:502:in `checkout'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:376:in `connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `RoR_TDP2_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `RoR_TDP2_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices` CASCADE[0m
+  [1m[35m (33.4ms)[0m  [1m[35mCREATE TABLE `devices` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `latitude` float(24), `longitude` float(24), `target_id` bigint, `esp_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_on_esp_id`  (`esp_id`),  INDEX `index_devices_on_target_id`  (`target_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices_versions` CASCADE[0m
+  [1m[35m (26.1ms)[0m  [1m[35mCREATE TABLE `devices_versions` (`device_id` bigint NOT NULL, `version_id` bigint NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_versions_on_device_id_and_version_id`  (`device_id`, `version_id`),  INDEX `index_devices_versions_on_version_id_and_device_id`  (`version_id`, `device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `esps` CASCADE[0m
+  [1m[35m (19.5ms)[0m  [1m[35mCREATE TABLE `esps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `mac` varchar(255), `version` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `issues` CASCADE[0m
+  [1m[35m (24.9ms)[0m  [1m[35mCREATE TABLE `issues` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `message` varchar(255), `device_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_issues_on_device_id`  (`device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs` CASCADE[0m
+  [1m[35m (20.6ms)[0m  [1m[35mCREATE TABLE `programs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs_targets` CASCADE[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCREATE TABLE `programs_targets` (`target_id` bigint NOT NULL, `program_id` bigint NOT NULL,  INDEX `index_programs_targets_on_program_id_and_target_id`  (`program_id`, `target_id`),  INDEX `index_programs_targets_on_target_id_and_program_id`  (`target_id`, `program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `targets` CASCADE[0m
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE `targets` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email`  (`email`), UNIQUE INDEX `index_users_on_reset_password_token`  (`reset_password_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `versions` CASCADE[0m
+  [1m[35m (23.0ms)[0m  [1m[35mCREATE TABLE `versions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `changelog` varchar(255), `program_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_versions_on_program_id`  (`program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (49.7ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_8eb6be2ced`
+FOREIGN KEY (`esp_id`)
+  REFERENCES `esps` (`id`)
+[0m
+  [1m[35m (43.5ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_880f659fce`
+FOREIGN KEY (`target_id`)
+  REFERENCES `targets` (`id`)
+[0m
+  [1m[35m (41.7ms)[0m  [1m[35mALTER TABLE `issues` ADD CONSTRAINT `fk_rails_e76fc2d2a8`
+FOREIGN KEY (`device_id`)
+  REFERENCES `devices` (`id`)
+[0m
+  [1m[35m (44.4ms)[0m  [1m[35mALTER TABLE `versions` ADD CONSTRAINT `fk_rails_c7d507fe90`
+FOREIGN KEY (`program_id`)
+  REFERENCES `programs` (`id`)
+[0m
+  [1m[35m (23.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (3.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20191120195146)[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20191120195143),
+(20191120195145),
+(20191120195141),
+(20191120195139),
+(20191120195128),
+(20191120195133),
+(20191120195135),
+(20191120195137);
+
+[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-11-22 18:51:14', '2019-11-22 18:51:14')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices` CASCADE[0m
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE `devices` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `latitude` float(24), `longitude` float(24), `target_id` bigint, `esp_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_on_esp_id`  (`esp_id`),  INDEX `index_devices_on_target_id`  (`target_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `devices_versions` CASCADE[0m
+  [1m[35m (24.5ms)[0m  [1m[35mCREATE TABLE `devices_versions` (`device_id` bigint NOT NULL, `version_id` bigint NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_devices_versions_on_device_id_and_version_id`  (`device_id`, `version_id`),  INDEX `index_devices_versions_on_version_id_and_device_id`  (`version_id`, `device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `esps` CASCADE[0m
+  [1m[35m (46.7ms)[0m  [1m[35mCREATE TABLE `esps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `mac` varchar(255), `version` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `issues` CASCADE[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE TABLE `issues` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `message` varchar(255), `device_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_issues_on_device_id`  (`device_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs` CASCADE[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE TABLE `programs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `programs_targets` CASCADE[0m
+  [1m[35m (22.3ms)[0m  [1m[35mCREATE TABLE `programs_targets` (`target_id` bigint NOT NULL, `program_id` bigint NOT NULL,  INDEX `index_programs_targets_on_program_id_and_target_id`  (`program_id`, `target_id`),  INDEX `index_programs_targets_on_target_id_and_program_id`  (`target_id`, `program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `targets` CASCADE[0m
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE `targets` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (21.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email`  (`email`), UNIQUE INDEX `index_users_on_reset_password_token`  (`reset_password_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `versions` CASCADE[0m
+  [1m[35m (107.0ms)[0m  [1m[35mCREATE TABLE `versions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `changelog` varchar(255), `program_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_versions_on_program_id`  (`program_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (46.6ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_8eb6be2ced`
+FOREIGN KEY (`esp_id`)
+  REFERENCES `esps` (`id`)
+[0m
+  [1m[35m (41.1ms)[0m  [1m[35mALTER TABLE `devices` ADD CONSTRAINT `fk_rails_880f659fce`
+FOREIGN KEY (`target_id`)
+  REFERENCES `targets` (`id`)
+[0m
+  [1m[35m (146.4ms)[0m  [1m[35mALTER TABLE `issues` ADD CONSTRAINT `fk_rails_e76fc2d2a8`
+FOREIGN KEY (`device_id`)
+  REFERENCES `devices` (`id`)
+[0m
+  [1m[35m (44.6ms)[0m  [1m[35mALTER TABLE `versions` ADD CONSTRAINT `fk_rails_c7d507fe90`
+FOREIGN KEY (`program_id`)
+  REFERENCES `programs` (`id`)
+[0m
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20191120195146)[0m
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20191120195143),
+(20191120195145),
+(20191120195141),
+(20191120195139),
+(20191120195128),
+(20191120195133),
+(20191120195135),
+(20191120195137);
+
+[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `targets` (`name`, `created_at`, `updated_at`) VALUES ('Arduino UNO', '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `esps` (`mac`, `version`, `created_at`, `updated_at`) VALUES ('AA:BB:CC:DD:EE:FF', 1, '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTarget Load (0.2ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.2ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `devices` (`name`, `latitude`, `longitude`, `target_id`, `esp_id`, `created_at`, `updated_at`) VALUES ('Arduino Catedra', 0.0, 0.0, 1, 1, '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `programs` (`name`, `description`, `created_at`, `updated_at`) VALUES ('Blinky 500', 'EL BLINKY QUE BLINKEA', '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `programs_targets` (`target_id`, `program_id`) VALUES (1, 1)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `versions` (`number`, `changelog`, `program_id`, `created_at`, `updated_at`) VALUES (1, 'Nada', 1, '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `devices_versions` (`device_id`, `version_id`, `created_at`, `updated_at`) VALUES (1, 1, '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `issues` (`message`, `created_at`, `updated_at`) VALUES ('No hay más yerba', '2019-11-22 18:51:15', '2019-11-22 18:51:15')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2019-11-22 15:51:28 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.2ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 8385ms (Views: 8363.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/esps/AA:BB:CC:DD:EE:FF" for 127.0.0.1 at 2019-11-22 15:53:41 -0300
+Processing by EspsController#show as HTML
+  Parameters: {"id"=>"AA:BB:CC:DD:EE:FF"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Esp with 'id'=AA:BB:CC:DD:EE:FF):
+  
+app/controllers/esps_controller.rb:82:in `set_esp'
+  [1m[35m (4.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEsp Load (0.2ms)[0m  [1m[34mSELECT `esps`.* FROM `esps`[0m
+Started GET "/esps/AA:BB:CC:DD:EE:FF/version+" for 127.0.0.1 at 2019-11-22 15:54:24 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/esps/AA:BB:CC:DD:EE:FF/version+"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/esps/AA:BB:CC:DD:EE:FF/version" for 127.0.0.1 at 2019-11-22 15:54:27 -0300
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FF"}
+  [1m[36mEsp Load (0.8ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 7.2ms)
+
+
+  
+  [1m[36mCACHE Esp Load (0.0ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m  [["mac", "AA:BB:CC:DD:EE:FF"], ["LIMIT", 11]]
+NoMethodError (undefined method `lastVersion?' for #<Esp::ActiveRecord_Relation:0x00005628a29155e8>):
+  
+app/controllers/esps_controller.rb:65:in `version'
+Started GET "/esps/AA:BB:CC:DD:EE:FF/version" for 127.0.0.1 at 2019-11-22 15:54:35 -0300
+Processing by EspsController#version as HTML
+  Parameters: {"mac"=>"AA:BB:CC:DD:EE:FF"}
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Esp Load (0.0ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m  [["mac", "AA:BB:CC:DD:EE:FF"], ["LIMIT", 11]]
+NoMethodError (undefined method `lastVersion?' for #<Esp::ActiveRecord_Relation:0x00005628a17ea638>):
+  
+app/controllers/esps_controller.rb:65:in `version'
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:54:49 -0300
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:54:51 -0300
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:55:10 -0300
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' LIMIT 11[0m
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:55:14 -0300
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:55:15 -0300
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mCACHE Esp Load (0.0ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m  [["mac", "AA:BB:CC:DD:EE:FF"], ["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:55:16 -0300
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+Started PUT "/__web_console/repl_sessions/07802b6db7646941caeda7703f615091" for 127.0.0.1 at 2019-11-22 15:55:18 -0300
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`mac` = 'AA:BB:CC:DD:EE:FF' ORDER BY `esps`.`id` ASC LIMIT 1[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`esp_id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mProgram Load (0.2ms)[0m  [1m[34mSELECT  `programs`.* FROM `programs` WHERE `programs`.`id` = 1 LIMIT 1[0m
+  [1m[36mVersion Load (0.3ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` WHERE `versions`.`program_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Version Load (0.0ms)[0m  [1m[34mSELECT  `versions`.* FROM `versions` INNER JOIN `devices_versions` ON `versions`.`id` = `devices_versions`.`version_id` WHERE `devices_versions`.`device_id` = 1 ORDER BY `versions`.`id` DESC LIMIT 1[0m  [["device_id", 1], ["LIMIT", 1]]
