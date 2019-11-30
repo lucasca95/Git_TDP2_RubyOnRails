@@ -28,4 +28,7 @@ class Esp < ApplicationRecord
     def updated
         self.device.versions << self.actualVersion
     end 
+    def to_s
+     return self.mac
+    end
 end

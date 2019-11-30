@@ -2138,3 +2138,448 @@ Processing by EspsController#sendData as HTML
 Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 2.4ms)
 
 
+  [1m[35m (51.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (52.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` ORDER BY `devices`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTarget Load (0.6ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (27.8ms)[0m  [1m[33mUPDATE `devices` SET `latitude` = -34.898299, `longitude` = -60.022379, `updated_at` = '2019-11-30 20:27:27' WHERE `devices`.`id` = 1[0m
+  [1m[35m (95.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:28:29 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (64.7ms)
+Completed 200 OK in 910ms (Views: 873.9ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/devices/1" for 127.0.0.1 at 2019-11-30 17:28:32 -0300
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+  Rendering devices/show.html.erb within layouts/application
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 60ms (Views: 54.4ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT `targets`.* FROM `targets`[0m
+Started GET "/devices/1" for 127.0.0.1 at 2019-11-30 17:30:39 -0300
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+  Rendering devices/show.html.erb within layouts/application
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 76ms (Views: 57.0ms | ActiveRecord: 4.0ms)
+
+
+  [1m[36mUser Load (1281.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:39:54 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (The asset "isci.png" is not present in the asset pipeline.):
+    13:           <!-- El logotipo y el icono que despliega el menú se agrupan
+    14:           para mostrarlos mejor en los dispositivos móviles -->
+    15:           <div class="navbar-header" >
+    16:               <%= image_tag( 'isci.png' , size: '226x50')%>
+    17:           </div>
+    18:     
+    19:           <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__4077238450492378331_70317653566100'
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:40:06 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:40:50 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:43:30 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 203ms (Views: 201.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:44:08 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-select' with type 'text/css'
+Checked in these paths: 
+  /home/santiago/RoR_TDP2/app/assets/config
+  /home/santiago/RoR_TDP2/app/assets/images
+  /home/santiago/RoR_TDP2/app/assets/javascripts
+  /home/santiago/RoR_TDP2/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/santiago/RoR_TDP2/node_modules):
+    4:     <title>RoRTdp2</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4077238450492378331_70317650891180'
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:45:03 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-select' with type 'text/css'
+Checked in these paths: 
+  /home/santiago/RoR_TDP2/app/assets/config
+  /home/santiago/RoR_TDP2/app/assets/images
+  /home/santiago/RoR_TDP2/app/assets/javascripts
+  /home/santiago/RoR_TDP2/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/santiago/RoR_TDP2/node_modules):
+    4:     <title>RoRTdp2</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4077238450492378331_70317647485500'
+Started GET "/" for 127.0.0.1 at 2019-11-30 17:46:26 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'devise_bootstrap_views' with type 'text/css'
+Checked in these paths: 
+  /home/santiago/RoR_TDP2/app/assets/config
+  /home/santiago/RoR_TDP2/app/assets/images
+  /home/santiago/RoR_TDP2/app/assets/javascripts
+  /home/santiago/RoR_TDP2/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/santiago/RoR_TDP2/node_modules):
+    4:     <title>RoRTdp2</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4077238450492378331_70317675108100'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:03:27 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-select' with type 'text/css'
+Checked in these paths: 
+  /home/santiago/RoR_TDP2/app/assets/config
+  /home/santiago/RoR_TDP2/app/assets/images
+  /home/santiago/RoR_TDP2/app/assets/javascripts
+  /home/santiago/RoR_TDP2/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/santiago/RoR_TDP2/node_modules):
+    4:     <title>RoRTdp2</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4077238450492378331_70317607727880'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:03:29 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-select' with type 'text/css'
+Checked in these paths: 
+  /home/santiago/RoR_TDP2/app/assets/config
+  /home/santiago/RoR_TDP2/app/assets/images
+  /home/santiago/RoR_TDP2/app/assets/javascripts
+  /home/santiago/RoR_TDP2/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/santiago/RoR_TDP2/node_modules):
+    4:     <title>RoRTdp2</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4077238450492378331_70317573780180'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:03:37 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (54.9ms)
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'devise_bootstrap_views' with type 'text/css'
+Checked in these paths: 
+  /home/santiago/RoR_TDP2/app/assets/config
+  /home/santiago/RoR_TDP2/app/assets/images
+  /home/santiago/RoR_TDP2/app/assets/javascripts
+  /home/santiago/RoR_TDP2/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/bootstrap-select-rails-1.12.4/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/bootstrap-select-rails-1.12.4/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.7/lib/assets/compiled
+  /root/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/santiago/RoR_TDP2/node_modules):
+    4:     <title>RoRTdp2</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3430923442597353807_47220381058940'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:04:03 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 5993ms (Views: 5969.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:04:54 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 5790ms (Views: 5751.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:05:51 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 270ms (Views: 268.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:07:28 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.4ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( bootstrap-select.js )` to `config/initializers/assets.rb` and restart your server):
+     5: 		<%= csrf_meta_tags %>
+     6: 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     7: 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     8: 		<%= javascript_include_tag 'bootstrap-select', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___964229309363672145_70255449286600'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:08:30 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( bootstrap-select.js )` to `config/initializers/assets.rb` and restart your server):
+     5: 		<%= csrf_meta_tags %>
+     6: 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     7: 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     8: 		<%= javascript_include_tag 'bootstrap-select', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___964229309363672145_70255446816060'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:08:31 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.3ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.3ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( bootstrap-select.js )` to `config/initializers/assets.rb` and restart your server):
+     5: 		<%= csrf_meta_tags %>
+     6: 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     7: 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     8: 		<%= javascript_include_tag 'bootstrap-select', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___964229309363672145_70255444886140'
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:08:50 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.4ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.5ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (54.8ms)
+Completed 200 OK in 335ms (Views: 307.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-30 18:09:29 -0300
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  [1m[36mTarget Load (0.5ms)[0m  [1m[34mSELECT  `targets`.* FROM `targets` WHERE `targets`.`id` = 1 LIMIT 1[0m
+  [1m[36mEsp Load (0.7ms)[0m  [1m[34mSELECT  `esps`.* FROM `esps` WHERE `esps`.`id` = 1 LIMIT 1[0m
+  Rendered devices/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 1.7ms)
+
+
