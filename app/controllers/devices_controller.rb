@@ -29,7 +29,11 @@ class DevicesController < ApplicationController
     @device = Device.new(device_params)
     @version = Version.where(params.require(:device).permit(:program_id)).order(:number).last
     if @version.nil? 
-      render :new, alert: 'This program doesn\'t has versions'
+      redirect_to devices_path :new, :alert => "This program doesn't has versions"
+      return
+    end
+    if !@version.program.targets.include?(@device.target)
+      redirect_to devices_path,:alert => "This program is incompatible with the target"
       return
     end
     respond_to do |format|

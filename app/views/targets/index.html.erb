@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Targets</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -14,9 +12,9 @@
     <% @targets.each do |target| %>
       <tr>
         <td><%= target.name %></td>
-        <td><%= link_to 'Show', target %></td>
-        <td><%= link_to 'Edit', edit_target_path(target) %></td>
-        <td><%= link_to 'Destroy', target, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', target, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_target_path(target), class:"btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', target, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Target', new_target_path %>
+<%= link_to 'New Target', new_target_path, class:"btn btn-success" %>

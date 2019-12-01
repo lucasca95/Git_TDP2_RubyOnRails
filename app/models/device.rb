@@ -4,7 +4,7 @@ class Device < ApplicationRecord
   validates :latitude, numericality: true
   belongs_to :target
   belongs_to :esp
-  has_many :device_versions
+  has_many :device_versions, dependent: :destroy
   has_many :issues
   def program
     return self.device_versions.last.nil? ? nil : self.device_versions.last.version.program

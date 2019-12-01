@@ -11,4 +11,7 @@ class Program < ApplicationRecord
     def lastVersion
         return self.versions.last
     end
+    def devices
+        return Device.where(id:self.versions.joins(:device_versions).select("device_versions.device_id as id").distinct.map{|d| d.id})
+    end
 end
