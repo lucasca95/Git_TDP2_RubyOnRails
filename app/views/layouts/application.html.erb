@@ -60,7 +60,8 @@
             </ul>
             <% if user_signed_in? %>
               <div class="nav navbar navbar-text" style="border: 0px solid #D2D2D2; margin: 0px; padding: 0px; padding-top: 5px;">
-                <center><%= link_to current_user.email, "#"%> <br> </center>
+                <p style="text-align: center;">  Current User:  <br>
+                <%= link_to current_user.email, "#"%> </p>
                 </div>
             <% end %>				
             <ul class="nav navbar-nav navbar-right" style="padding-right: 10px">

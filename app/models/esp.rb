@@ -31,4 +31,7 @@ class Esp < ApplicationRecord
     def to_s
      return self.mac
     end
+    def self.unassigned
+        return Esp.joins("left join devices as d on d.esp_id = esps.id").where("d.id is null")
+    end
 end
