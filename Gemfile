@@ -56,5 +56,6 @@ gem 'hirb'
 gem 'devise'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'bootstrap-select-rails'BLINKEA 
 gem 'dotenv-rails'
 gem 'mysql2'

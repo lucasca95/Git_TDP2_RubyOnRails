@@ -22,8 +22,14 @@
       <%= form.text_field :description, id: :program_description, class:"form-control" %>
     </div>
   </div>
+  <%=form.collection_select :target_ids,Target.all,:id,:name,{}, {multiple: true, :class => 'selectpicker form-control', :id => "temas"}%>
 
   <div class="actions">
     <%= form.submit class:"btn btn-success" %>
   </div>
 <% end %>
+<script type="text/javascript">
+  $('#temas').selectpicker('hide');
+  $('#temas').selectpicker('show');
+  $('#temas').selectpicker('refresh'); 
+</script>
