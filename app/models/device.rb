@@ -1,4 +1,7 @@
 class Device < ApplicationRecord
+  validates :name, presence: true
+  validates :longitude, numericality: true
+  validates :latitude, numericality: true
   belongs_to :target
   belongs_to :esp
   has_many :device_versions

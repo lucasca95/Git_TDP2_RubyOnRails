@@ -1,6 +1,8 @@
 class Esp < ApplicationRecord
     has_one :device
-
+    validates :mac, format: { with: /[a-fA-F0-9:]{17}|[a-fA-F0-9]{12}/ , message: "Invalid MAC address"}
+    validates :mac, uniqueness: true
+    validates :version,  numericality: { only_integer: true }
     def lastVersion?
         return self.device.lastVersion?
     end
