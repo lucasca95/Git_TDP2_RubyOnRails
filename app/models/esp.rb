@@ -1,19 +1,8 @@
 class Esp < ApplicationRecord
     has_one :device
 
-
-
-    def program
-        return self.device.versions.last.program
-    end
-    def installedVersion
-        return self.device.versions.last
-    end
-    def actualVersion
-        return self.program.versions.last
-    end
     def lastVersion?
-        return self.actualVersion.id == self.installedVersion.id
+        return self.device.lastVersion?
     end
 
     def getLastVersion(page,size)
@@ -26,7 +15,7 @@ class Esp < ApplicationRecord
     end
 
     def updated
-        self.device.versions << self.actualVersion
+        self.device.updated
     end 
     def to_s
      return self.mac

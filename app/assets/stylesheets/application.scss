@@ -13,7 +13,7 @@
  */
 
 @import "bootstrap-sprockets";
-@import "bootstrap";
+@import "bootstrap";rails g model DeviceVersion device:references version:references state:integer
 body{
     background-color: #e6e6ff;
 }

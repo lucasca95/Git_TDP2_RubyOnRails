@@ -5,4 +5,8 @@ class Program < ApplicationRecord
     def to_s
         return name
     end
+
+    def lastVersion
+        return self.versions.last
+    end
 end

@@ -13,5 +13,7 @@ p = Program.create(name:"Blinky 500", description:"EL BLINKY QUE BLINKEA")
 p.targets << t
 v = Version.create(number:1,changelog:"Nada", program_id:p.id)
 p.versions << v
-d.versions << v
 i = Issue.create(message:"No hay más yerba")
+u = User.create(email:"santiagocorrao96@gmail.com",password:"123456")
+dv = Device.last.device_versions.build(version_id:1,state:1)
+dv.save
