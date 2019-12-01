@@ -1,6 +1,7 @@
 <h1>Editing Esp</h1>
 
 <%= render 'form', esp: @esp %>
+<br>
+<%= link_to 'Show', @esp , class:"btn btn-primary"%> |
+<%= link_to 'Cancel', esps_path, class:"btn btn-danger" %>
 
-<%= link_to 'Show', @esp %> |
-<%= link_to 'Back', esps_path %>

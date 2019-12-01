@@ -24,9 +24,9 @@
         <td><%= device.target %></td>
         <td><%= device.esp %></td>
         <td><%= device.program %></td>
-        <td><%= link_to 'Show', device %></td>
-        <td><%= link_to 'Edit', edit_device_path(device) %></td>
-        <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', device , class: "btn btn-primary"%></td>
+        <td><%= link_to 'Edit', edit_device_path(device), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Device', new_device_path %>
+<%= link_to 'New Device', new_device_path, class: "btn btn-success" %>

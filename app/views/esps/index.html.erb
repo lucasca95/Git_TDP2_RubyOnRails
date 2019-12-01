@@ -2,7 +2,7 @@
 
 <h1>Esps</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Mac</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= esp.mac %></td>
         <td><%= esp.version %></td>
-        <td><%= link_to 'Show', esp %></td>
-        <td><%= link_to 'Edit', edit_esp_path(esp) %></td>
-        <td><%= link_to 'Destroy', esp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', esp, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_esp_path(esp), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', esp, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Esp', new_esp_path %>
+<%= link_to 'New Esp', new_esp_path , class: "btn btn-success"%>

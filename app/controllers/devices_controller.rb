@@ -28,11 +28,19 @@ class DevicesController < ApplicationController
   def create
     @device = Device.new(device_params)
     @version = Version.where(params.require(:device).permit(:program_id)).order(:number).last
-    rompetodos
+    if @version.nil? 
+      render :new, alert: 'This program doesn\'t has versions'
+      return
+    end
     respond_to do |format|
       if @device.save
-        format.html { redirect_to @device, notice: 'Device was successfully created.' }
-        format.json { render :show, status: :created, location: @device }
+        if @device.device_versions.build(state:1,version:@version).save
+          format.html { redirect_to @device, notice: 'Device was successfully created.' }
+          format.json { render :show, status: :created, location: @device }
+        else
+          format.html { render :new }
+          format.json { render json: @device.errors, status: :unprocessable_entity }
+        end
       else
         format.html { render :new }
         format.json { render json: @device.errors, status: :unprocessable_entity }
