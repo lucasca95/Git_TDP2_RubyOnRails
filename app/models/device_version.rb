@@ -9,7 +9,7 @@ class DeviceVersion < ApplicationRecord
     when 0 
       return "Installed"
     when 1
-      return "Pending"
+      return "First"
     when 2
       return "Forced"
     else

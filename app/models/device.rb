@@ -6,6 +6,9 @@ class Device < ApplicationRecord
   def program
     return self.device_versions.last.nil? ? nil : self.device_versions.last.version.program
   end
+  def versionState
+    self.device_versions.where(version:self.actualVersion).to_ary.sort_by{|v| -v[:state]}.first
+  end
   def actualVersion
     self.device_versions.where(state:0).last.nil? ? nil : self.device_versions.where(state:0).last.version
   end
@@ -14,12 +17,8 @@ class Device < ApplicationRecord
   end
   def lastVersion
     if self.device_versions.where(state:2).count == 0
-      if self.device_versions.where(state:1).count == 0
         return self.program.lastVersion
-      else
-        return self.device_versions.where(state:1).last.version.number > self.program.lastVersion.number ? self.device_versions.where(state:1).last.version : self.program.lastVersion
-      end
-    else
+    else 
       return self.device_versions.where(state:2).last.version
     end
   end

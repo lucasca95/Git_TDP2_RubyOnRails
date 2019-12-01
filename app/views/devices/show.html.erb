@@ -32,6 +32,19 @@
       <%= @device.program %>
     </p>
     
+    <p>
+      <strong>Actual Version:</strong>
+      <%= @device.actualVersion.nil? ? "" : @device.actualVersion.number %>
+      <%= @device.actualVersion.nil? ? "" : @device.actualVersion.changelog %>
+      <%= @device.versionState.nil? ? "" : @device.versionState.state_s%>
+
+    </p>
+    <p>
+      <strong>Last Available:</strong>
+      <%= @device.program.lastVersion.number %>
+      <%= @device.program.lastVersion.changelog %>
+    </p>
+  
     <%= link_to 'Edit', edit_device_path(@device) %> |
     <%= link_to 'Back', devices_path %>
   </div>
