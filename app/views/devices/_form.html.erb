@@ -1,6 +1,6 @@
 <%= form_with(model: device, local: true) do |form| %>
   <% if device.errors.any? %>
-    <div id="error_explanation">
+    <div class= "alert alert-danger" id="error_explanation">
       <h2><%= pluralize(device.errors.count, "error") %> prohibited this device from being saved:</h2>
 
       <ul>
@@ -37,7 +37,7 @@
     <div class="col-sm-4">
       <div class="form-group">
         <%= form.label :target_id %>
-        <%= form.select :target_id,  content_tag(:option,'Seleccione...',:value=>"")+options_from_collection_for_select(Target.all, "id", :to_s),{}, {:class => 'form-control'} %>
+        <%= form.select :target_id,  content_tag(:option,'Seleccione...',:value=>"") + options_from_collection_for_select(Target.all, "id", :to_s,:selected => form.object.target_id),{}, {:class => 'form-control'} %>
       </div>
     </div>
   </div>
@@ -45,10 +45,18 @@
     <div class="col-sm-4">
       <div class="form-group">
         <%= form.label :esp_id %>
-        <%= form.select :esp_id,  content_tag(:option,'Seleccione...',:value=>"")+options_from_collection_for_select(Esp.unassigned, "id", :to_s),{}, {:class => 'form-control'} %>
+        <%= form.select :esp_id,  content_tag(:option,'Seleccione...',:value=>"")+options_from_collection_for_select(Esp.unassigned(form.object.esp), "id", :to_s,:selected => form.object.esp.nil? ? 0 : form.object.esp.id.to_s),{}, {:class => 'form-control'} %>
       </div>
     </div>
   </div>
+  <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <%= form.label "Program" %>
+          <%= form.select :program_id,  content_tag(:option,'Seleccione...',:value=>"")+options_from_collection_for_select(Program.all, "id", :to_s,:selected => form.object.program.nil? ? 0: form.object.program.id),{}, {:class => 'form-control'} %>
+        </div>
+      </div>
+    </div>
     
     <div class="actions">
       <%= form.submit class: "btn btn-primary" %>

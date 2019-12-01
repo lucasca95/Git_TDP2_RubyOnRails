@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191120195146) do
+ActiveRecord::Schema.define(version: 20191201023830) do
+
+  create_table "device_versions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "device_id"
+    t.bigint "version_id"
+    t.integer "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["device_id"], name: "index_device_versions_on_device_id"
+    t.index ["version_id"], name: "index_device_versions_on_version_id"
+  end
 
   create_table "devices", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -22,15 +32,6 @@ ActiveRecord::Schema.define(version: 20191120195146) do
     t.datetime "updated_at", null: false
     t.index ["esp_id"], name: "index_devices_on_esp_id"
     t.index ["target_id"], name: "index_devices_on_target_id"
-  end
-
-  create_table "devices_versions", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.bigint "device_id", null: false
-    t.bigint "version_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["device_id", "version_id"], name: "index_devices_versions_on_device_id_and_version_id"
-    t.index ["version_id", "device_id"], name: "index_devices_versions_on_version_id_and_device_id"
   end
 
   create_table "esps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -89,6 +90,8 @@ ActiveRecord::Schema.define(version: 20191120195146) do
     t.index ["program_id"], name: "index_versions_on_program_id"
   end
 
+  add_foreign_key "device_versions", "devices"
+  add_foreign_key "device_versions", "versions"
   add_foreign_key "devices", "esps"
   add_foreign_key "devices", "targets"
   add_foreign_key "issues", "devices"

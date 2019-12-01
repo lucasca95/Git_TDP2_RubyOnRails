@@ -2,6 +2,7 @@ class DevicesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_device, only: [:show, :edit, :update, :destroy]
 
+
   # GET /devices
   # GET /devices.json
   def index
@@ -26,7 +27,8 @@ class DevicesController < ApplicationController
   # POST /devices.json
   def create
     @device = Device.new(device_params)
-
+    @version = Version.where(params.require(:device).permit(:program_id)).order(:number).last
+    rompetodos
     respond_to do |format|
       if @device.save
         format.html { redirect_to @device, notice: 'Device was successfully created.' }

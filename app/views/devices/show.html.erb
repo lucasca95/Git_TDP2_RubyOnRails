@@ -1,29 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @device.name %>
-</p>
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<%= @device.latitude %>%2C<%= @device.longitude %>&key=AIzaSyDnQ_vmTzLheQajtReLjKB3RCkSIJVEsDk" allowfullscreen></iframe> 
-<p>
-  <strong>Latitude:</strong>
-  <%= @device.latitude %>
-</p>
+<div class="row">
+  <div class="col-sm-6" id="datos">
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @device.longitude %>
-</p>
-
-<p>
-  <strong>Target:</strong>
-  <%= @device.target %>
-</p>
-
-<p>
-  <strong>Esp:</strong>
-  <%= @device.esp %>
-</p>
-
-<%= link_to 'Edit', edit_device_path(@device) %> |
-<%= link_to 'Back', devices_path %>
+    
+    <p>
+      <strong>Name:</strong>
+      <%= @device.name %>
+    </p>
+    <p>
+      <strong>Latitude:</strong>
+      <%= @device.latitude %>
+    </p>
+    
+    <p>
+      <strong>Longitude:</strong>
+      <%= @device.longitude %>
+    </p>
+    
+    <p>
+      <strong>Target:</strong>
+      <%= @device.target %>
+    </p>
+    
+    <p>
+      <strong>Esp:</strong>
+      <%= @device.esp %>
+    </p>
+    <p>
+      <strong>Program:</strong>
+      <%= @device.program %>
+    </p>
+    
+    <%= link_to 'Edit', edit_device_path(@device) %> |
+    <%= link_to 'Back', devices_path %>
+  </div>
+  <div class="col-sm-6">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<%= @device.latitude %>%2C<%= @device.longitude %>&key=AIzaSyDnQ_vmTzLheQajtReLjKB3RCkSIJVEsDk" allowfullscreen></iframe> 
+  </div>
+</div>
+  

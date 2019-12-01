@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  device: one
+  version: one
+  state: 1
+
+two:
+  device: two
+  version: two
+  state: 1
