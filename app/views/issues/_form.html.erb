@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :message %>
-    <%= form.text_field :message, id: :issue_message %>
+    <%= form.text_field :message, id: :issue_message, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :device_id %>
-    <%= form.text_field :device_id, id: :issue_device_id %>
+    <%= form.select :device_id,  content_tag(:option,'Seleccione...',:value=>"") + options_from_collection_for_select(Device.all, "id", :to_s,:selected => form.object.device_id),{}, {:class => 'form-control'} %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-success" %>
   </div>
 <% end %>

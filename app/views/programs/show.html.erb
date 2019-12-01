@@ -11,12 +11,22 @@
           <%= @program.name %>
         </p>
       </div>
-      <div class="col-sm-9">
+      <div class="col-sm-6">
         <p>
           <strong>Description:</strong>
           <%= @program.description %>
         </p>
       </div>      
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>
+          <strong>Compatible Targets:</strong>
+          <% @program.targets.map{|t| "#{t.name}, "}.each do |target| %>
+          <%= target %>
+          <% end %>
+        </p>
+      </div>
     </div>
     <div class="row">
       <table class="table">

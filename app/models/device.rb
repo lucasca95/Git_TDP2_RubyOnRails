@@ -31,4 +31,9 @@ class Device < ApplicationRecord
     dv.save
   end
 
+  def to_s
+    return self.name
+  end
+
+
 end

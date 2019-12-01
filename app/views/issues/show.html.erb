@@ -7,8 +7,10 @@
 
 <p>
   <strong>Device:</strong>
-  <%= @issue.device %>
+  <%if !@issue.device.nil? %>
+    <%= link_to @issue.device,@issue.device %>
+  <% end %>
 </p>
 
-<%= link_to 'Edit', edit_issue_path(@issue) %> |
-<%= link_to 'Back', issues_path %>
+<%= link_to 'Edit', edit_issue_path(@issue), class:"btn btn-warning" %> |
+<%= link_to 'Back', issues_path, class:"btn btn-success" %>

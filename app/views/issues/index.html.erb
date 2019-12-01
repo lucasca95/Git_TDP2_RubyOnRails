@@ -2,7 +2,7 @@
 
 <h1>Issues</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Message</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= issue.message %></td>
         <td><%= issue.device %></td>
-        <td><%= link_to 'Show', issue %></td>
-        <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
-        <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', issue, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_issue_path(issue), class:"btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Issue', new_issue_path %>
+<%= link_to 'New Issue', new_issue_path, class:"btn btn-success" %>
