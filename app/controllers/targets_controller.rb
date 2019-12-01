@@ -1,4 +1,5 @@
 class TargetsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_target, only: [:show, :edit, :update, :destroy]
 
   # GET /targets

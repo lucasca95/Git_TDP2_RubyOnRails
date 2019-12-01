@@ -1,4 +1,5 @@
 class EspsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_esp, only: [:show, :edit, :update, :destroy]
   layout false , only: [:version,:updated,:sendData]
   # GET /esps

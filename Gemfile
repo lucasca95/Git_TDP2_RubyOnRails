@@ -54,8 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'hirb'
 gem 'devise'
-gem 'autoprefixer-rails'
 gem 'jquery-rails'
-gem 'bootstrap-select-rails'
+gem 'bootstrap-sass'
 gem 'dotenv-rails'
 gem 'mysql2'

@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :devices
   resources :targets
   resources :esps
-  devise_for :users
   root to: "devices#index"
+  devise_for :users, :skip => :registration
 
 
   get "/esps/:mac/version", to: "esps#version" , as: "checkVersion"

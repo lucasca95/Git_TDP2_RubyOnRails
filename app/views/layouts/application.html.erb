@@ -5,64 +5,62 @@
 		<%= csrf_meta_tags %>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-		<%= javascript_include_tag 'bootstrap-select', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
       <nav class="navbar navbar-default navbar-static-top" role="navigation" >
           <!-- El logotipo y el icono que despliega el menú se agrupan
           para mostrarlos mejor en los dispositivos móviles -->
-          <div class="navbar-header" >
+          <div class="navbar-header navbar-brand" >
               <%#= image_tag( 'isci.png' , size: '226x50')%>
           </div>
     
           <!-- Agrupar los enlaces de navegación, los formularios y cualquier
           otro elemento que se pueda ocultar al minimizar la barra -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color: #ffe6e6">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
+          <div class="collapse navbar-collapse navbar-ex1-collapse fixed-top bar-color">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Device <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to "New", new_device_path %></li>
-                  <li><%= link_to "Index", devices_path %></li>
-                  <li class="divider"></li>
+                  <li class="dropdown-item"><%= link_to "New", new_device_path %></li>
+                  <li class="dropdown-item"><%= link_to "Index", devices_path %></li>
+                  <li class="divider dropdown-item"></li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <li class="nav-item dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ESP<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to "New" , new_esp_path %></li>
-                  <li><%= link_to "Index", esps_path %></li>
-                  <li class="divider"></li>
+                  <li class="dropdown-item"><%= link_to "New" , new_esp_path %></li>
+                  <li class="dropdown-item"><%= link_to "Index", esps_path %></li>
+                  <li class="divider dropdown-item"></li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <li class="nav-item dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to "New" , new_program_path %></li>
-                  <li><%= link_to "Index", programs_path %></li>
+                  <li class="dropdown-item"><%= link_to "New" , new_program_path %></li>
+                  <li class="dropdown-item"><%= link_to "Index", programs_path %></li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <li class="nav-item dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Target <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to "New", new_target_path %></li>
-                  <li><%= link_to "Index", targets_path %></li>
-                  <li class="divider"></li>    
+                  <li class="dropdown-item"><%= link_to "New", new_target_path %></li>
+                  <li class="dropdown-item"><%= link_to "Index", targets_path %></li>
+                  <li class="divider dropdown-item"></li>    
                 </ul>
               </li>
-              <li class="dropdown">
+              <li class="nav-item dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Issue<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><%= link_to "New" , new_issue_path %></li>
-                    <li><%= link_to "Index", issues_path %></li>
+                    <li class="dropdown-item"><%= link_to "New" , new_issue_path %></li>
+                    <li class="dropdown-item"><%= link_to "Index", issues_path %></li>
                   </ul>
               </li>
+            </ul>
             <% if user_signed_in? %>
               <div class="nav navbar navbar-text" style="border: 0px solid #D2D2D2; margin: 0px; padding: 0px; padding-top: 5px;">
-                <center>
-                <%= link_to current_user.email, "#"%> <br> 
-                </center>
+                <center><%= link_to current_user.email, "#"%> <br> </center>
                 </div>
             <% end %>				
             <ul class="nav navbar-nav navbar-right" style="padding-right: 10px">
@@ -70,15 +68,17 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"> </a>
                 <ul class="dropdown-menu">
                   <% if user_signed_in? %>
-                    <li><%= link_to "Cerrar Sesion", destroy_user_session_path,method: :delete %></li>
+                    <li><%= link_to "Log out", destroy_user_session_path,method: :delete %></li>
                   <% else %>    
-                    <li><%= link_to "Iniciar Sesion", "users/sign_in"%></li>
+                    <li><%= link_to "Sign in", new_session_path(resource_name)%></li>
                   <% end %>
                 </ul>
               </li>
             </ul>
           </div>
         </nav>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
