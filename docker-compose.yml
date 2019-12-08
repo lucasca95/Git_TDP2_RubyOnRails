@@ -35,6 +35,7 @@ services:
             DB_HOST: db
             RAILS_ENV: production
             RAILS_MAX_THREADS: 5
+            SECRET_KEY_BASE: CuloResucio
         volumes:
             - ".:/app"
             - "./config/docker/database.yml:/app/config/database.yml"
