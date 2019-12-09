@@ -37,10 +37,8 @@ services:
             RAILS_MAX_THREADS: 5
             SECRET_KEY_BASE: CuloResucio
         volumes:
-            - ".:/app"
+            - ".:/public"
             - "./config/docker/database.yml:/app/config/database.yml"
-    
-
 
     #sidekiq:
     #    depends_on:

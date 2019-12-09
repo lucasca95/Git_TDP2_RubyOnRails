@@ -10,5 +10,6 @@ sh ./config/docker/prepare-db.sh
 sh ./config/docker/asset-pre-compile.sh
 
 # Start Application
+rm -f /myapp/tmp/pids/server.pid
 #bundle exec puma -C config/puma.rb
 rails s -e production -p 3000 -b 0.0.0.0
