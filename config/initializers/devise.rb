@@ -296,4 +296,7 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
+
+  # RoR para docker pide que agreguemos esta línea
+  config.secret_key = 'd181ec1e6a9322b763dc5c7944fd9225f870c26eab2c8960c63b0ba9dff8eafe8a36b5dd9fccef3111801e04f0a5ff9f0e93fdb23878329a26c214c20769633c'
 end
