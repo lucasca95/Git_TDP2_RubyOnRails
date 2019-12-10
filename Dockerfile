@@ -8,7 +8,8 @@ WORKDIR /app
 # COPY Gemfile Gemfile.lock ./
 COPY . .
 
-RUN gem install ovirt-engine-sdk -v '4.3.0' --source 'https://rubygems.org/'
+RUN git pull; \
+    gem install ovirt-engine-sdk -v '4.3.0' --source 'https://rubygems.org/'
 RUN gem install bundler; \
     bundle update --bundler; \
     #bundle install --deployment --without development test
