@@ -13,11 +13,12 @@ RUN gem install bundler; \
     bundle update --bundler; \
     #bundle install --deployment --without development test
     bundle install; \
+    bundle update rake; \
     cat Gemfile.lock
 
 EXPOSE 3000
 
-RUN rake assets:precompile --trace RAILS_ENV=production
+#RUN rake assets:precompile --trace RAILS_ENV=production
 #VOLUME ["/app/public"]
 
 ENTRYPOINT ["sh", "./config/docker/startup.sh"]
