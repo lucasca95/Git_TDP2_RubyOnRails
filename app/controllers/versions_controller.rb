@@ -64,6 +64,7 @@ class VersionsController < ApplicationController
     end
   end
 
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_version
@@ -74,4 +75,5 @@ class VersionsController < ApplicationController
     def version_params
       params.require(:version).permit(:number, :changelog, :program_id)
     end
+  end
 end
