@@ -75,5 +75,5 @@ class VersionsController < ApplicationController
     def version_params
       params.require(:version).permit(:number, :changelog, :program_id)
     end
-  end
+
 end
