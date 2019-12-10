@@ -27,7 +27,8 @@ class VersionsController < ApplicationController
   def create
     @version = Version.new(version_params)
     if @version.number == nil
-      @version.number = Version.nextVersion(@version.program_id) 
+      @version.number = Version.nextVersion(@version.program_id)
+    end 
     respond_to do |format|
       if @version.save
         format.html { redirect_to @version, notice: 'Version was successfully created.' }
