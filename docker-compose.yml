@@ -59,4 +59,4 @@ volumes:
     redis:
     db:
     jenkins-data:
-        extrenal: true
+        external: true
