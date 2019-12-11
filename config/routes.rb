@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'device_versions', to: "device_versions#create" , as: "device_version"
+  delete 'device_versions/:id', to: "device_versions#destroy", as: "delete_device_version"
   resources :versions
   resources :programs
   resources :issues

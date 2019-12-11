@@ -25,6 +25,9 @@ class Device < ApplicationRecord
       return self.device_versions.where(state:2).last.version
     end
   end
+  def isForced?
+    return self.device_versions.where(state:2).count != 0
+  end
 
   def updated
     dv = self.device_versions.build(state:0,version:self.lastVersion)

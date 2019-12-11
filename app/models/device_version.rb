@@ -17,4 +17,5 @@ class DeviceVersion < ApplicationRecord
     end
   
   end
+
 end
