@@ -1,5 +1,6 @@
 class VersionsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:create]
+  skip_before_action :verify_authenticity_token, only: [:create]
   before_action :set_version, only: [:show, :edit, :update, :destroy]
   layout false , only: [:create]
   # GET /versions

@@ -1,4 +1,5 @@
 class EspsController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: [:error]
   before_action :authenticate_user!, except: [:version,:sendData,:updated,:error]
   before_action :set_esp, only: [:show, :edit, :update, :destroy]
   layout false , only: [:version,:updated,:sendData,:error]
