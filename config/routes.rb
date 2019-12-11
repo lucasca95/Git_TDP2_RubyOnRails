@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   get "/esps/:mac/version", to: "esps#version" , as: "checkVersion"
   get "/esps/:mac/:page/:size", to: "esps#sendData" , as: "sendData"
   get "/esps/:mac/updated", to: "esps#updated" , as: "updated"
-  #get "/esps/:mac/error/:message", to: "esps#error" , as: "error"
+  post "/esps/:mac/error/:message", to: "esps#error" , as: "error"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
