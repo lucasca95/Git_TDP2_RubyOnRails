@@ -27,11 +27,17 @@ class VersionsController < ApplicationController
   # POST /versions.json
   def create
     @version = Version.new(params.require(:version).permit(:changelog))
-    @version.program_id = Program.where(name:params[:version][:program_name]).first.id
-    if @version.number == nil
-      @version.number = Version.nextVersion(@version.program_id)
-    end 
-    @result = @version.save
+    @program = Program.where(name:params[:version][:program_name]).first
+    if !@program.nil? 
+      @version.program_id = @program.id
+      if @version.number == nil
+        @version.number = Version.nextVersion(@version.program_id)
+      end 
+      @result = @version.save
+    else
+      @result = false
+    end
+    
   end
 
   # PATCH/PUT /versions/1
