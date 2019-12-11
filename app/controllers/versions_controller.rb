@@ -1,7 +1,7 @@
 class VersionsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_version, only: [:show, :edit, :update, :destroy]
-
+  layout false , only: [:create]
   # GET /versions
   # GET /versions.json
   def index
@@ -29,15 +29,7 @@ class VersionsController < ApplicationController
     if @version.number == nil
       @version.number = Version.nextVersion(@version.program_id)
     end 
-    respond_to do |format|
-      if @version.save
-        format.html { redirect_to @version, notice: 'Version was successfully created.' }
-        format.json { render :show, status: :created, location: @version }
-      else
-        format.html { render :new }
-        format.json { render json: @version.errors, status: :unprocessable_entity }
-      end
-    end
+    @result = @version.save
   end
 
   # PATCH/PUT /versions/1
