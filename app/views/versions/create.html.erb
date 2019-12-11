@@ -1,5 +1,5 @@
 <% if @result %>
-    <%= @version.number %>
+    <%= "#{@version.program.id},#{@version.number}" %>
 <% else %>
     Errors
 <% end %>
