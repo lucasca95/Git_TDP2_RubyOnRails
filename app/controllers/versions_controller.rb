@@ -26,7 +26,8 @@ class VersionsController < ApplicationController
   # POST /versions
   # POST /versions.json
   def create
-    @version = Version.new(version_params)
+    @version = Version.new(params.require(:version).permit(:changelog))
+    @version.program_id = Program.where(name:params[:version][:program_name]).first.id
     if @version.number == nil
       @version.number = Version.nextVersion(@version.program_id)
     end 

@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 t = Target.create(name:"Arduino UNO")
-e = Esp.create(mac:"AA:BB:CC:DD:EE:FF", version:1)
+e = Esp.create(mac:"A0:20:A6:00:F3:CD", version:1)
 d = Device.create(name:"Arduino Catedra",latitude:0,longitude:0,esp_id:e.id,target_id:t.id)
-p = Program.create(name:"Blinky 500", description:"EL BLINKY QUE BLINKEA")
+p = Program.create(name:"Blinky", description:"EL BLINKY QUE BLINKEA")
 p.targets << t
-v = Version.create(number:1,changelog:"Nada", program_id:p.id)
+v = Version.create(number:1,changelog:"500", program_id:p.id)
 p.versions << v
 i = Issue.create(message:"No hay más yerba")
 u = User.create(email:"santiagocorrao96@gmail.com",password:"123456")

@@ -25,6 +25,8 @@ class TargetsController < ApplicationController
   # POST /targets
   # POST /targets.json
   def create
+    redirect_to targets_path, alert: "Solo se permite atmega328p"
+    return
     @target = Target.new(target_params)
 
     respond_to do |format|

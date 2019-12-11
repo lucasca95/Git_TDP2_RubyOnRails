@@ -39,10 +39,11 @@ services:
             RAILS_ENV: production
             RAILS_MAX_THREADS: 5
             SECRET_KEY_BASE: CuloResucio
+            COMPILED_PROGRAMS: "/app/jenkins/workspace/CompileSketch/programs"
         volumes:
             - ".:/public"
             - "./config/docker/database.yml:/app/config/database.yml"
-            - jenkins-data:/jenkins
+            - jenkins-data:/app/jenkins
 
     #sidekiq:
     #    depends_on:

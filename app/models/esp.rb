@@ -9,7 +9,7 @@ class Esp < ApplicationRecord
 
     def getLastVersion(page,size)
         result = ""
-        f = File.new("#{Rails.root}/compiled_programs/#{self.device.program.id}/#{self.device.lastVersion.number}/#{self.device.target.id}.hex")
+        f = File.new("#{ENV["COMPILED_PROGRAMS"]}/#{self.device.program.id}/#{self.device.lastVersion.number}/#{self.device.target.id}.hex")
         f.readlines[page*size..((page + 1)*size)-1].each do |l|
             result = "#{result}#{l.to_s.gsub!( "\n", "")}"
         end
