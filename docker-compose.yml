@@ -42,6 +42,7 @@ services:
         volumes:
             - ".:/public"
             - "./config/docker/database.yml:/app/config/database.yml"
+            - jenkins-data:/jenkins
 
     #sidekiq:
     #    depends_on:
@@ -57,3 +58,4 @@ services:
 volumes:
     redis:
     db:
+    jenkins-data:
