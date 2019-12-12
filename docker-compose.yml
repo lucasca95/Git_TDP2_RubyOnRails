@@ -11,11 +11,6 @@ services:
             - "3307:3306"
         volumes:
             - db:/var/lib/mysql
-    redis:
-        image: "redis:4.0-alpine"
-        command: redis-server
-        volumes:
-            - "redis:/data"
             
     admin:
         image: adminer
@@ -25,7 +20,6 @@ services:
     website:
         depends_on:
             - "db"
-            - "redis"
         build: .
         ports:
             - "80:3000"
@@ -38,26 +32,14 @@ services:
             DB_HOST: db
             RAILS_ENV: production
             RAILS_MAX_THREADS: 5
-            SECRET_KEY_BASE: CuloResucio
+            SECRET_KEY_BASE: CuloReSucio
             COMPILED_PROGRAMS: "/app/jenkins/workspace/CompileSketch/programs"
         volumes:
-            - ".:/public"
+            #- ".:/public"
             - "./config/docker/database.yml:/app/config/database.yml"
             - jenkins-data:/app/jenkins
 
-    #sidekiq:
-    #    depends_on:
-    #        - "db"
-    #        - "redis"
-    #    build: .
-    #    command: sidekiq -C config/sidekiq.yml
-    #    volumes:
-    #        - ".:/app"
-    #    environment:
-    #        REDIS_URL: redis://redis:6379/0
-
 volumes:
-    redis:
     db:
     jenkins-data:
         external: true

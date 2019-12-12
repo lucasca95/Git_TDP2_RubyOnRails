@@ -5,21 +5,16 @@ RUN apk update && apk upgrade && apk add ruby ruby-json ruby-io-console ruby-bun
 RUN mkdir /app
 WORKDIR /app
 
-# COPY Gemfile Gemfile.lock ./
 COPY . .
 
 RUN gem install ovirt-engine-sdk -v '4.3.0' --source 'https://rubygems.org/'
 RUN gem install bundler; \
     bundle update --bundler; \
-    #bundle install --deployment --without development test
     bundle install; \
     bundle update rake; \
     bundle update nokogiri; \
     cat Gemfile.lock
 
 EXPOSE 3000
-
-#RUN rake assets:precompile --trace RAILS_ENV=production
-#VOLUME ["/app/public"]
 
 ENTRYPOINT ["sh", "./config/docker/startup.sh"]
